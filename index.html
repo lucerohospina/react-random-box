@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Coiny|Dancing+Script|Indie+Flower|Lobster|Open+Sans+Condensed:300|Oswald|Pacifico|Roboto+Slab|Shadows+Into+Light|Ubuntu" rel="stylesheet">
   <script src="https://unpkg.com/react@16.2.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16.2.0/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
@@ -15,7 +16,13 @@
   <div id="app"></div>
   
 <script type="text/babel">
-  let textContent= <h1 className="text-content">Hello World!</h1>
+
+    function randomFont() {
+    let fonts = ['font-1', 'font-2', 'font-3', 'font-4', 'font-5', 'font-6', 'font-7', 'font-8', 'font-9', 'font-10'];
+    let fontFam = fonts[Math.floor(Math.random() * fonts.length)];
+
+    return fontFam
+  }
 
   function randomBgColor() {
     let color = '#';
@@ -26,7 +33,9 @@
   }
 
     const boxStyles = {backgroundColor: randomBgColor(), height: '300px', width: '400px'};
-    
+    const contentFont = randomFont();
+    let style = {left: '25%', position: 'relative', top: '35%'};
+    let textContent= <h1 className={contentFont} style = {style}>Hello World!</h1>
 
   class RandomBox extends React.Component {
 

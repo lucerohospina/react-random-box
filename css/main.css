@@ -4,3 +4,42 @@
   top: 35%;
 }
 
+.font-1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.font-3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.font-4 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.font-5 {
+  font-family: 'Indie Flower', cursive;
+}
+
+.font-6 {
+  font-family: 'Lobster', cursive;
+}
+
+.font-7 {
+  font-family: 'Coiny', cursive;
+}
+
+.font-8 {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-9 {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.font-10 {
+  font-family: 'Dancing Script', cursive;
+}
