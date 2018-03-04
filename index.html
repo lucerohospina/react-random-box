@@ -32,10 +32,10 @@
     return color
   }
 
-    const boxStyles = {backgroundColor: randomBgColor(), height: '300px', width: '400px'};
+    const boxStyles = {backgroundColor: randomBgColor(), height: '300px', width: '500px'};
     const contentFont = randomFont();
-    let style = {left: '25%', position: 'relative', top: '35%'};
-    let textContent= <h1 className={contentFont} style = {style}>Hello World!</h1>
+    let style = {fontSize: '3em', left: '20%', position: 'relative', top: '35%'};
+    let textContent= <h1 className={contentFont} style = {style}>We <img src="assets/images/heart2.png" alt="heart"/> REACT!</h1>
 
   class RandomBox extends React.Component {
 
