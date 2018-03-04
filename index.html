@@ -15,24 +15,24 @@
   <div id="app"></div>
   
 <script type="text/babel">
-  var textContent= <h1>Hello World!</h1>
+  let textContent= <h1 className="text-content">Hello World!</h1>
 
   function randomBgColor() {
-    var color = '#';
-      var colorCodes = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0'];
-      color += colorCodes[Math.floor(Math.random() * colorCodes.length)];
+    let color = '#';
+    let colorCodes = ['7FFFD4','00FFFF','FF7F50','8B008B','8FBC8F','228B22','FFD700','ADFF2F', 'FF0000', '663399', '40E0D0', 'FFFF00'];
+    color += colorCodes[Math.floor(Math.random() * colorCodes.length)];
     
-      return color
+    return color
   }
 
-    const boxBgColor = {backgroundColor: randomBgColor(), heigth: '500', width: '400px'};
+    const boxStyles = {backgroundColor: randomBgColor(), height: '300px', width: '400px'};
     
 
   class RandomBox extends React.Component {
 
     render(){
       return(
-        <div style={boxBgColor}>{textContent}</div>
+        <div style={boxStyles}>{textContent}</div>
       );
     }
   }
